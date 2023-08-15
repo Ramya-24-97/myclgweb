@@ -307,7 +307,7 @@ h3{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images\background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -318,7 +318,7 @@ h3{
 
 }
 .about-us{
-    width: 80;
+    width: 80%;
     margin: auto;
     padding-top: 80px;
     padding-bottom: 50px;
@@ -333,11 +333,22 @@ h3{
 
 }
 .about-col h1{
-    padding-top: 0%;
+    padding-top: 0;
 
 }
 .about-col p{
     padding: 15px 0 25px;
+
+}
+
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+
+.red-btn:hover{
+    color: #fff;
 }
 /* ----------------------BLOG CONTENT-------------- */
 .blog-content {
