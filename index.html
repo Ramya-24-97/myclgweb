@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> St.Joseph College Website</title>
     <link rel="stylesheet" href="css\style.css">
-    <img style="padding-top: 0px;padding-bottom: 0px;position: relative;right: 2.5px;" src="https://stjosephcollege.edu.in/images/St.joseph.jpg" width="100%">
+    <img style="padding-top: 0px;padding-bottom: 0px;position: static;right: 0%;" src="https://stjosephcollege.edu.in/images/St.joseph.jpg" width="100%">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
@@ -16,8 +17,8 @@
 <body>
     <section class="header">
         <nav>
-            <div class="nav-links">
-
+            <div class="nav-links" id="navLinks">
+                  <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -26,6 +27,7 @@
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
 
     <div class="text-box">
@@ -38,14 +40,26 @@
     </div>
 
     </section>
-<!-- ---------------course-------- -->
+
+    <!----------------------------javascript for toggle menu---------------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right = "0";
+    }
+    function hidemenu(){
+        navLinks.style.right = "-200px";
+
+    }
+</script>
+<!-- -------------------------------------course------------------------------------------>
     <section class="course">
         <h1> Courses We Offer</h1>
         <p>We Providing the Best Courses for Students in both Arts and Science.</p>
 <div class="row">
         <div class="course-col">
            <h3>Intermediate</h3>
-            <p>We Providing Under Graduation courses which contains Mathematics,Physics,Chemistry,Botany,Tamil,English,
+            <p>We Providing Intermediate courses which contains Mathematics,Physics,Chemistry,Botany,Tamil,English,
                 Commerece,Business Administration,Computer Science,Bio-Techonology,
                 Food and Nutrition,Bio-Chemistry and Business Management.</p>
         </div>
