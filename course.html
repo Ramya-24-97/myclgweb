@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css\style.css">
     <img style="padding-top: 0px;padding-bottom: 0px;position: relative;right: 2.5px;" src="https://stjosephcollege.edu.in/images/St.joseph.jpg" width="100%">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
@@ -17,7 +18,8 @@
 <body>
     <section class="sub-header">
         <nav>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
 
                 <ul>
                     <li><a href="index.html">HOME</a></li>
@@ -27,9 +29,23 @@
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+
         </nav>
 <h1>Our Courses</h1>
     </section>
+
+<!---------------------------------------------------------------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right = "0";
+    }
+    function hidemenu(){
+        navLinks.style.right = "-200px";
+
+    }
+</script>
 <!-- -----------------------courses------------------------ -->
 
 <section class="course">
